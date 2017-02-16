@@ -25,6 +25,21 @@ namespace CarAppTeht01
         public MainPage()
         {
             this.InitializeComponent();
+
+        }
+
+        private void TrucksButton_Click(object sender, RoutedEventArgs e)
+        {
+            int value = int.Parse(TrucksTextBlock.Text); // "0" -> 0
+            value++;
+            TrucksTextBlock.Text = value.ToString(); // 1 -> "1"
+        }
+
+        private void CarsButton_Click(object sender, RoutedEventArgs e)
+        {
+            int value = int.Parse(CarsTextBlock.Text);
+            value++;
+            CarsTextBlock.Text = value.ToString();
         }
     }
 }
